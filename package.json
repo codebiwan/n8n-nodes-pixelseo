@@ -1,0 +1,45 @@
+{
+  "name": "n8n-nodes-pixelseo",
+  "version": "0.6.0",
+  "description": "n8n community node for PixelSEO — AI-powered SEO image generation and optimization",
+  "keywords": [
+    "n8n-community-node-package"
+  ],
+  "license": "MIT",
+  "homepage": "https://pixelseo.ai",
+  "author": {
+    "name": "YouFirst SEO",
+    "email": "chris.cagle@youfirstseo.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youfirstseo/n8n-nodes-pixelseo.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && copyfiles -u 0 \"nodes/**/*.svg\" dist/",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/PixelSeoApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/PixelSeo/PixelSeo.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.16",
+    "copyfiles": "^2.4.1",
+    "n8n-workflow": "*",
+    "typescript": "^5.1.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
