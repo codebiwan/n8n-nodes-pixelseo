@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-pixelseo",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "n8n community node for PixelSEO — AI-powered SEO image generation and optimization",
   "keywords": [
     "n8n-community-node-package"
