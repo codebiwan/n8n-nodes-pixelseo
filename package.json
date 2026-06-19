@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/youfirstseo/n8n-nodes-pixelseo.git"
+    "url": "git+https://github.com/codebiwan/n8n-nodes-pixelseo.git"
   },
   "main": "index.js",
   "scripts": {
